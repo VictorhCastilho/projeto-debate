@@ -1,3 +1,5 @@
+/* codigos que organizam o header*/
+
 .header-container{
     display: flex;						 
     align-content: center;
@@ -20,6 +22,8 @@
     height: auto;
 }
 
+/*codigos que organizam  o titulo */
+
 .titulo-content{
     display: flex;						 
     align-content: center;
@@ -31,4 +35,66 @@
 
 #titulo{
     font-size: 4.5vw;   
+}
+
+/* codigos que organizam os botões, e o texto dos botões da classe ranking*/
+
+.ranking label, .perguntas label{
+    display: block;
+}
+
+.ranking ul, .perguntas ul{
+    list-style: none;
+    display: block;
+}
+
+.ranking ul li{
+    float: left;
+    display: block;
+    width: 8.2%;
+    height: auto;
+    text-align: center;
+}
+
+/* codigos para posicionar o texto das perguntas */
+
+.ranking p, .perguntas p{
+    display: flex;						 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto;
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* codigo para posicionar organizar o botao da classe perguntas */
+
+.perguntas ul li{
+    float: left;
+    display: block;
+    width: 44%;
+    height: auto;
+    text-align: center;
+}
+
+/* codigo para organizar o botão do submit */
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    height: 5vh;
+}
+
+/* codigo para organizar a caixa de texto da ultima pergunta*/
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 25vw;
 }
