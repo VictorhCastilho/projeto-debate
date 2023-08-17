@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
 </head>
 <body>
     <div class="header-container">
@@ -28,10 +34,10 @@
 
         <br>
 
-        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+        <form action="processamento.php" method="POST">
 
         <div class="ranking">
-            <p>Qual nota, entre 0 e 10, você avalia o debate?</p>
+            <p>[1]Qual nota, entre 0 e 10, você avalia o debate?</p>
             <br>
             <ul>
                 <li><input type="radio" name="questao1" id="radio0" value="0" required><label>0</label></li>
@@ -54,7 +60,7 @@
         <hr>
 
         <div class="ranking">
-            <p>Qual nota, entre 0 e 10, você avalia os participantes?</p>
+            <p>[2]Qual nota, entre 0 e 10, você avalia os participantes?</p>
             <br>
             <ul>
                 <li><input type="radio" name="questao2" id="radio0" value="0" required><label>0</label></li>
@@ -77,11 +83,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Considera essa iniciativa importante para os cursos de Sistemas de Informação?</p>
+            <p>[3]Considera essa iniciativa importante para os cursos de Sistemas de Informação?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta1" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta1" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao3" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao3" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -91,11 +97,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Gostaria que houvesse outros debates?</p>
+            <p>[4]Gostaria que houvesse outros debates?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta2" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta2" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao4" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao4" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -105,11 +111,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Considera o formato do debate apropriado?</p>
+            <p>[5]Considera o formato do debate apropriado?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta3" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta3" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao5" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao5" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -119,11 +125,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Considera o horário do debate apropriado?</p>
+            <p>[6]Considera o horário do debate apropriado?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta4" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta4" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao6" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao6" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -133,11 +139,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Gostaria que o debate fosse transmitido on-line?</p>
+            <p>[7]Gostaria que o debate fosse transmitido on-line?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta5" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta5" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao7" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao7" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -147,11 +153,11 @@
         <hr>
 
         <div class="perguntas">
-            <p>Gostaria que os debates estivessem disponíveis on-line?</p>
+            <p>[8]Gostaria que os debates ficassem disponíveis on-line depois?</p>
             <br>
             <ul>
-                <li><input type="radio" name="pergunta6" id="não" value="não" required><label>não</label></li>
-                <li><input type="radio" name="pergunta6" id="sim" value="sim"><label>sim</label></li>
+                <li><input type="radio" name="questao8" id="não" value="nao" required><label>não</label></li>
+                <li><input type="radio" name="questao8" id="sim" value="sim"><label>sim</label></li>
             </ul>
         </div>
 
@@ -161,9 +167,9 @@
         <hr>
 
         <div class="perguntas">
-            <p>Quais sugestões gostaria de deixar para a organização?</p>
+            <p>[9]Quais sugestões gostaria de deixar para a organização?</p>
             <br>
-            <textarea id="sugestão" name="sugestão"></textarea>
+            <textarea id="sugestao" name="sugestao"></textarea>
         </div>
 
     </div>
