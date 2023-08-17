@@ -1,6 +1,6 @@
 # Projeto Debate
 
-OBS: É preciso colocar os arquivos na pasta Wamp\www\nome-de-escolha-propria ou na pasta destino que o servidor usado utiliza-se para hospedar arquivos web e abrir por lá.
+OBS: É preciso colocar os arquivos na pasta Wamp\www\nome-de-escolha-propria ou na pasta destino que o servidor usado utiliza para hospedar arquivos web e abrir por lá. Obviamente que o servidor tem de estar aberto.
 Está configurado para o servidor localhost.
 
 -O sistema verifica se já existe um banco de dados criado, se não, cria.
