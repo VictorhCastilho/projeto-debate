@@ -64,6 +64,7 @@ VALUES
 ($questao1, $questao2, '$questao3', '$questao4', '$questao5', '$questao6', '$questao7', '$questao8', '$sugestao')";
 
 $conn->query($queryinsert);
+$conn->close();
 //-----------------------------------------fim---------------------------------------------------------------//
 
 echo "tamo junto acaboukkkk"
