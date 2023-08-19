@@ -67,5 +67,6 @@ $conn->query($queryinsert);
 $conn->close();
 //-----------------------------------------fim---------------------------------------------------------------//
 
-echo "tamo junto acaboukkkk"
+header("Location: agradecimento.html");
+exit();
 ?>
