@@ -1,5 +1,5 @@
 <script>
     document.getElementById("botão").addEventListener("click", function(event) {
-        window.location.href = "pagina_de_agradecimento.html";
+        window.location.href = "agradecimento.html";
     });
 </script>
