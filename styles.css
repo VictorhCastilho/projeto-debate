@@ -2,6 +2,7 @@ body{
     padding: 10px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    background-color: rgb(226, 233, 231);
 }
 
 /* codigos que organizam o header*/
@@ -16,11 +17,18 @@ body{
     margin: 0 auto;
     gap: 3vw;
 }
+.content-container{
+    background-color: white;
+    border-radius: 10px;
+}
+hr{
+    background-color: rgba(233, 235, 237, 0.721);
+}
 
 #logo{
     width: 8vw;
-    height: auto;
     padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 #cabecalho{
@@ -37,6 +45,9 @@ body{
     align-items: center;
     width: 100%; 
     height: auto;
+    background-color: rgb(136, 192, 173);
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
 }
 
 #titulo{
@@ -52,14 +63,39 @@ body{
 .ranking ul, .perguntas ul{
     list-style: none;
     display: block;
+    border-color: black;
 }
 
-.ranking ul li{
+.ranking ul li{ /*CONTROLA CADA BOTÃO (1,2,3,...,7,8,9)*/
     float: left;
     display: block;
     width: 8.2%;
     height: auto;
     text-align: center;
+    margin-top: 5px;
+}
+.ranking ul li p{
+    display: flex;						 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(136, 192, 173);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
 }
 
 /* codigos para posicionar o texto das perguntas */
@@ -69,20 +105,33 @@ body{
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 100%; 
+   /* width: 100%;*/ 
     height: auto;
     font-size: 3vw;
     text-align: center;
+    margin: 5px 10px 0px 10px;
 }
 
 /* codigo para posicionar organizar o botao da classe perguntas */
-
+.perguntas{
+    height: max-content;
+}
 .perguntas ul li{
     float: left;
     display: block;
     width: 44%;
-    height: auto;
     text-align: center;
+    font-size: 3vw;
+}
+.perguntas ul li p{
+    display: flex;						 
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0vw;
 }
 
 /* codigo para organizar o botão do submit */
@@ -93,6 +142,27 @@ button{
     margin-right: auto;
     width: 20vw;
     height: 5vh;
+    border-radius: 5px;
+    background-color: rgb(136, 192, 173);
+    border-color: rgb(136, 192, 173);
+}
+button p{
+    font-weight: bold;
+    color: rgb(64, 64, 64);				 
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 3vw;
+    vertical-align: middle;
+}
+button:hover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: rgb(142, 200, 181);
+    border-color: rgb(136, 192, 173);
 }
 
 /* codigo para organizar a caixa de texto da ultima pergunta*/

@@ -30,11 +30,52 @@
         .back-link:hover {
             border-bottom: none;
         }
+        .titulo-content{
+            display: flex;						 
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            height: auto;
+            background-color: rgb(136, 192, 173);
+            border-radius: 5px;
+        }
+        .content-container{
+            background-color: white;
+            border-radius: 10px;
+        }
+        .header-container{
+            display: flex;						 
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            height: auto;  
+            margin: 0 auto;
+            gap: 3vw;
+        }
+        body{
+            padding: 10px;
+            font-family: 'Nunito', sans-serif;
+            text-align: center;
+            background-color: rgb(226, 233, 231);
+        }
     </style>
 </head>
 <body>
-    <div class="message-container">
-        <h1>Obrigado pelo feedback!</h1>
+    <div class="header-container">
+        
+        <div class="logo-header">
+            <img src="imgs/logoif.png" id="logo"/>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="titulo-content">
+            <h1 id="titulo">Avaliação Do Debate</h1>
+        </div>
+        <div class="message-container">
+            <h1>Obrigado pelo feedback!</h1>
+        </div>
     </div>
 </body>
 </html>
