@@ -45,7 +45,7 @@ hr{
     align-items: center;
     width: 100%; 
     height: auto;
-    background-color: rgb(136, 192, 173);
+    background-color: rgb(63, 161, 76);
     border-top-left-radius: 3%;
     border-top-right-radius: 3%;
 }
@@ -84,19 +84,304 @@ hr{
     margin-top: 0.5vw;
     margin-bottom: 0vw;
 }
-input[type='radio']:checked:after {
-    width: 15px;
-    height: 15px;
+/*CORES DOS BOTÕES*/
+input[id = 'radio0']::before { /**BOTÃO0*/
+    width: 11px;
+    height: 11px;
     border-radius: 15px;
-    top: -2px;
-    left: -1px;
     position: relative;
-    background-color: rgb(136, 192, 173);
+    background-color: rgb(239, 61, 75);
     content: '';
     display: inline-block;
     visibility: visible;
-    border: 2px solid white;
+    border: 1px solid white;
 }
+input[id = 'radio0']:checked:after {/*BOTÃO0 CLICADO*/
+    width: 10px;
+    height: 10px;
+    top: -16px;
+    left: 1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(239, 61, 75);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio1']::before {/*BOTÃO1*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(242, 97, 73);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio1']:checked:after {/*BOTÃO1 CLICADO*/
+    width: 10px;
+    height: 10px;
+    top: -16px;
+    left: 1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(242, 97, 73);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio2']::before {/*BOTÃO2*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(252, 135, 65);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio2']:checked:after {/*BOTÃO2 CLICADO*/
+    width: 10px;
+    height: 10px;
+    top: -16px;
+    left: 1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(252, 135, 65);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio3']::before { /*BOTÃO3*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(254, 168, 46);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio3']:checked:after {/*BOTÃO3 CLICADO*/
+    width: 10px;
+    height: 10px;
+    top: -16px;
+    left: 1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(254, 168, 46);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio4']::before {/*BOTÃO4*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(255, 200, 37);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio4']:checked:after {/*BOTÃO4 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(255, 200, 37);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio5']::before {/*BOTÃO5*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(249, 222, 22);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio5']:checked:after {/*BOTÃO5 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(249, 222, 22);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio6']::before {/*BOTÃO6*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(216, 222, 53);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio6']:checked:after {/*BOTÃO6 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(216, 222, 53);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio7']::before {/*BOTÃO7*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(173, 214, 91);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio7']:checked:after {/*BOTÃO7 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(173, 214, 91);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio8']::before {/*BOTÃO8*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(131, 212, 115);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio8']:checked:after {/*BOTÃO8 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(131, 212, 115);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio9']::before {/*BOTÃO9*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(81, 205, 131);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio9']:checked:after {/*BOTÃO9 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(81, 205, 131);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'radio10']::before {/*BOTÃO10*/
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(63, 161, 76);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+input[id = 'radio10']:checked:after {/*BOTÃO10 CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -16px;
+    left: 1px;
+    position: relative;
+    background-color: rgb(63, 161, 76);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+input[id = 'sim']:checked:after {/*BOTÃO 'SIM' CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(63, 161, 76);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+input[id = 'não']:checked:after {/*BOTÃO 'NÃO' CLICADO*/
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(239, 61, 75);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid black;
+}
+
+
 
 /* codigos para posicionar o texto das perguntas */
 
@@ -143,26 +428,15 @@ button{
     width: 20vw;
     height: 5vh;
     border-radius: 5px;
-    background-color: rgb(136, 192, 173);
-    border-color: rgb(136, 192, 173);
+    background-color: rgb(63, 161, 76);
+    border-color: rgb(63, 161, 76);
 }
 button p{
-    font-weight: bold;
-    color: rgb(64, 64, 64);				 
+    font-weight: bold;				 
     margin-top: 1vh;
     text-align: center;
     font-size: 3vw;
     vertical-align: middle;
-}
-button:hover{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20vw;
-    height: 5vh;
-    border-radius: 5px;
-    background-color: rgb(142, 200, 181);
-    border-color: rgb(136, 192, 173);
 }
 
 /* codigo para organizar a caixa de texto da ultima pergunta*/
