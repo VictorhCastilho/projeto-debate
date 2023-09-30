@@ -10,7 +10,7 @@
 
         .message-container {
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 2vw;
             padding: 20px;
             box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
         }
@@ -38,10 +38,13 @@
             width: 100%; 
             height: auto;
             background-color: rgb(63, 161, 76);
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 2vw;
         }
+
         .content-container{
             background-color: white;
-            border-radius: 10px;
+            border-radius: 2vw;
         }
         .header-container{
             display: flex;						 
@@ -58,6 +61,7 @@
             font-family: 'Nunito', sans-serif;
             text-align: center;
             background-color: rgb(226, 233, 231);
+            
         }
     </style>
 </head>

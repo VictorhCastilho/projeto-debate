@@ -9,6 +9,7 @@ $questao5 = $_POST['questao5'];
 $questao6 = $_POST['questao6'];
 $questao7 = $_POST['questao7'];
 $questao8 = $_POST['questao8'];
+$questao9 = $_POST['questao9'];
 $sugestao = filter_input(INPUT_POST, 'sugestao', FILTER_SANITIZE_STRING);
 
 //-------------------------verificação e criação do banco de dados--------------------------------------------//
@@ -38,6 +39,7 @@ mysqli_select_db($conn, $dbnome); //Selecionou o banco
 $createTableQuery = 
 "CREATE TABLE $tabelanome
 (ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+data varchar(10),
 questao1 INT(2) NOT NULL, 
 questao2 INT(2) NOT NULL,
 questao3 CHAR(3) NOT NULL,
@@ -46,6 +48,7 @@ questao5 CHAR(3) NOT NULL,
 questao6 CHAR(3) NOT NULL,
 questao7 CHAR(3) NOT NULL,
 questao8 CHAR(3) NOT NULL,
+questao9 CHAR(3) NOT NULL,
 sugestao VARCHAR(500))
 ";
 $conn->query($createTableQuery);
@@ -57,16 +60,19 @@ $conn->query($createTableQuery);
 //----------------------------------inserindo valores na tabela-----------------------------------------------//
 mysqli_select_db($conn, $dbnome);
 
+$dia = date_create("2023-12-30");
+$data = $dia->format("Y,m,d");
+
 $queryinsert = "
 INSERT INTO $tabelanome
-(questao1, questao2, questao3, questao4, questao5, questao6, questao7, questao8, sugestao)
+(data, questao1, questao2, questao3, questao4, questao5, questao6, questao7, questao8, questao9, sugestao)
 VALUES
-($questao1, $questao2, '$questao3', '$questao4', '$questao5', '$questao6', '$questao7', '$questao8', '$sugestao')";
+('$data',$questao1, $questao2, '$questao3', '$questao4', '$questao5', '$questao6', '$questao7', '$questao8', '$questao9', '$sugestao')";
 
 $conn->query($queryinsert);
 $conn->close();
 //-----------------------------------------fim---------------------------------------------------------------//
 
-header("Location: agradecimento.html");
+header("Location: agradecimento.php");
 exit();
 ?>

@@ -3,24 +3,26 @@ body{
     font-family: 'Nunito', sans-serif;
     text-align: center;
     background-color: rgb(226, 233, 231);
-}
+} 
 
-/* codigos que organizam o header*/
+
+/* codigos que organizam o header*/ 
 
 .header-container{
     display: flex;						 
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: center;                                
     width: 100%; 
     height: auto;  
     margin: 0 auto;
     gap: 3vw;
-}
+} 
 .content-container{
+
     background-color: white;
-    border-radius: 10px;
-}
+    border-radius: 4vw;
+} 
 hr{
     background-color: rgba(233, 235, 237, 0.721);
 }
@@ -46,43 +48,51 @@ hr{
     width: 100%; 
     height: auto;
     background-color: rgb(63, 161, 76);
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
 }
 
 #titulo{
     font-size: 4.5vw;   
 }
 
+.ranking{
+    display: flex;
+    flex-direction: column;
+    margin: 4vw;
+    align-items: center;
+}
+
 /* codigos que organizam os botões, e o texto dos botões da classe ranking*/
 
 .ranking label, .perguntas label{
-    display: block;
+    display: flex;
 }
+
 
 .ranking ul, .perguntas ul{
     list-style: none;
-    display: block;
+    display: inline-flex;
     border-color: black;
+    padding: 0;
+    list-style-type: none;
 }
 
-.ranking ul li{ /*CONTROLA CADA BOTÃO (1,2,3,...,7,8,9)*/
-    float: left;
-    display: block;
-    width: 8.2%;
+.ranking ul li{ /*CONTROLA CADA BOTÃO UM DO LADO DO OUTRO(1,2,3,...,7,8,9)*/
+    display: inline-block;
+    width: 7vw;
     height: auto;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 4vw;
 }
 .ranking ul li p{
-    display: flex;						 
+    display: flex;				 
     align-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 3vw;
     margin-top: 0.5vw;
-    margin-bottom: 0vw;
 }
 /*CORES DOS BOTÕES*/
 input[id = 'radio0']::before { /**BOTÃO0*/
@@ -199,6 +209,8 @@ input[id = 'radio4']::before {/*BOTÃO4*/
 input[id = 'radio4']:checked:after {/*BOTÃO4 CLICADO*/
     width: 10px;
     height: 10px;
+    top: -16px;
+    left: 1px;
     border-radius: 15px;
     position: relative;
     background-color: rgb(255, 200, 37);
@@ -390,7 +402,7 @@ input[id = 'não']:checked:after {/*BOTÃO 'NÃO' CLICADO*/
     align-content: center;
     justify-content: center;
     align-items: center;
-   /* width: 100%;*/ 
+    width: 100%; 
     height: auto;
     font-size: 3vw;
     text-align: center;
@@ -399,14 +411,17 @@ input[id = 'não']:checked:after {/*BOTÃO 'NÃO' CLICADO*/
 
 /* codigo para posicionar organizar o botao da classe perguntas */
 .perguntas{
-    height: max-content;
+    display: inline-block;
+    flex-direction: column;
+    margin: 3vw;
 }
 .perguntas ul li{
     float: left;
     display: block;
-    width: 44%;
+    width: 30vw;
     text-align: center;
     font-size: 3vw;
+    margin-top: 4vw;
 }
 .perguntas ul li p{
     display: flex;						 
@@ -414,9 +429,7 @@ input[id = 'não']:checked:after {/*BOTÃO 'NÃO' CLICADO*/
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 3vw;
-    margin-top: 0.5vw;
-    margin-bottom: 0vw;
+    font-size: 3vw; 
 }
 
 /* codigo para organizar o botão do submit */
@@ -426,14 +439,13 @@ button{
     margin-left: auto;
     margin-right: auto;
     width: 20vw;
-    height: 5vh;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 2vw;
     background-color: rgb(63, 161, 76);
     border-color: rgb(63, 161, 76);
 }
 button p{
     font-weight: bold;				 
-    margin-top: 1vh;
     text-align: center;
     font-size: 3vw;
     vertical-align: middle;
@@ -442,9 +454,55 @@ button p{
 /* codigo para organizar a caixa de texto da ultima pergunta*/
 
 textarea {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 80vw;
-    height: 25vw;
+    margin-top: 5vw;
+    width: 60vw;
+    height: 20vw;
+}
+
+@media (min-width: 768px) {
+    
+    .content-container {
+      width: 70%; 
+      margin: 0 auto;
+    }
+  
+    .ranking ul li,
+    button {
+      width: 50%;   
+      font-size: 2vw; 
+    }
+
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 17vw;
+        height: 10;
+        border-radius: 2vw;
+        background-color: rgb(63, 161, 76);
+        border-color: rgb(63, 161, 76);
+    }
+    button p{
+        font-weight: bold;				 
+        text-align: center;
+        font-size: 3vw;
+        vertical-align: middle;
+    }
+
+    .ranking ul li{ /*CONTROLA CADA BOTÃO UM DO LADO DO OUTRO(1,2,3,...,7,8,9)*/
+        display: inline-block;
+        width: 5vw;
+        height: auto;
+        text-align: center;
+        margin-top: 4vw;
+    }
+    
+
+    input[type="radio"] {
+        transform: scale(2);
+    }
+
 }
