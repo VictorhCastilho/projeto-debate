@@ -13,10 +13,13 @@ $questao9 = $_POST['questao9'];
 $sugestao = filter_input(INPUT_POST, 'sugestao', FILTER_SANITIZE_STRING);
 
 //-------------------------verificação e criação do banco de dados--------------------------------------------//
-$dbnome = "projetodebate"; //Nome do banco de dados
+$dbnome = "debates2023"; //Nome do banco de dados
 
 $queryverificadb = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = '$dbnome'"; //Verificação de existencia do banco de dados
 $resultadoverificacao = $conn->query($queryverificadb); //
+
+//echo $queryverificadb;
+//exit;
 
 if ($resultadoverificacao && $resultadoverificacao->num_rows === 0) //Se é "falso" ou com base no número de colunas(se tem 0 É falso)
 {
@@ -61,13 +64,16 @@ $conn->query($createTableQuery);
 mysqli_select_db($conn, $dbnome);
 
 $dia = date_create("2023-12-30");
-$data = $dia->format("Y,m,d");
+$data = $dia->format("Y-m-d");
 
 $queryinsert = "
 INSERT INTO $tabelanome
 (data, questao1, questao2, questao3, questao4, questao5, questao6, questao7, questao8, questao9, sugestao)
 VALUES
 ('$data',$questao1, $questao2, '$questao3', '$questao4', '$questao5', '$questao6', '$questao7', '$questao8', '$questao9', '$sugestao')";
+
+//echo $queryinsert;
+//exit;
 
 $conn->query($queryinsert);
 $conn->close();
