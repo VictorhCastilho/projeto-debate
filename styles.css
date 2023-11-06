@@ -461,7 +461,72 @@ textarea {
     width: 60vw;
     height: 20vw;
 }
-
+/*LOGAR  REGISTRAR*/
+.content-container-login{
+    background-color: white;
+    border-radius: 4vw;
+}
+.meio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: white; 
+}
+.wrapper{
+    position: relative;
+    backdrop-filter: blur(20px);
+    width: 70vw;
+}
+.input-box label::after {
+    content: " *";
+    color: red;
+}
+.input-box label{
+    font-weight: 600;
+    color: #676767;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    border-radius: 5px;
+    height: 5vh;
+    width: 100%;
+    background-color: rgb(226, 233, 231);
+    border-top: white;
+    border-left: white;
+    border-bottom: white;
+    border-right: white;
+}
+.remember p{
+    margin-top: 1vh;
+    font-size: 15px;
+    color: #4f5050;
+}
+.remember a{
+    color: rgb(63, 161, 76);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.remember a:hover{
+    color: rgb(56, 145, 68);
+}
+.btn{
+    margin-top: 3vh;
+    width: 100%;
+    height: 4.5vh;
+    font-size: 1em;
+    font-weight: bold;
+    border-color: rgb(56, 145, 68);
+    border-top: white;
+    border-left: white;
+    border-bottom: white;
+    border-right: white;
+}
+.input-box ion-icon{
+    align-self: flex-end;
+    width: 3.5vw;
+}
 @media (min-width: 768px) {
     
     .content-container {
