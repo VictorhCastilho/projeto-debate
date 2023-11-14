@@ -9,6 +9,46 @@
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+    <style>
+        .message-container {
+            background-color: #ffffff;
+            border-radius: 2vw;
+            padding: 20px;
+            box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            border-bottom: 1px solid #007bff;
+            transition: border-bottom 0.2s;
+        }
+
+        .back-link:hover {
+            border-bottom: none;
+        }
+        .titulo-content{
+            display: flex;						 
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%; 
+            height: auto;
+            background-color: rgb(63, 161, 76);
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 2vw;
+        }
+
+        .content-container{
+            background-color: white;
+            border-radius: 2vw;
+        }
+    </style>
 <body>
 
     <div class="header-container">
@@ -19,13 +59,12 @@
     </div>
 
 
-    <div class="content-container-login">
+    <div class="content-container">
 
         <div class="titulo-content">
             <h1 id="titulo">Criar Conta</h1>
         </div>            
-     </div>
-     <div class="meio">
+     <div class="message-container">
         <form action="processamento.php" method="POST">
         <div class="wrapper">
             <div class="form-box login">
